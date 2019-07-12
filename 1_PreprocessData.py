@@ -70,6 +70,7 @@ EN = spacy.load('en')
 
 
 df = pd.read_csv(f'https://storage.googleapis.com/kubeflow-examples/code_search/raw_data/000000000001.csv')
+# df = pd.read_csv('./data/github.csv')
 
 df['nwo'] = df['repo_path'].apply(lambda r: r.split()[0])
 df['path'] = df['repo_path'].apply(lambda r: r.split()[1])
@@ -77,12 +78,12 @@ df.drop(columns=['repo_path'], inplace=True)
 df = df[['nwo', 'path', 'content']]
 df.head()
 
+df = df[0:7000, :]
 
 # In[4]:
 
 
 # Inspect shape of the raw data
-df.shape
 
 
 # ## Functions to parse data and tokenize
@@ -200,7 +201,6 @@ print(f'Removed {before_dedup - after_dedup:,} duplicate rows')
 # In[11]:
 
 
-df.shape
 
 
 # ## Separate function w/o docstrings
