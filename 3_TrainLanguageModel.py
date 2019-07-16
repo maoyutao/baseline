@@ -131,9 +131,9 @@ if not use_cache:
 # In[16]:
 
 
-vocab = load_lm_vocab('./data/lang_model/vocab.cls')
-trn_flat_idx = load_file_pickle('./data/lang_model/trn_flat_idx_list.pkl')
-val_flat_idx = load_file_pickle('./data/lang_model/val_flat_idx_list.pkl')
+vocab = load_lm_vocab('./data/lang_model/vocab_v2.cls')
+trn_flat_idx = load_file_pickle('./data/lang_model/trn_flat_idx_list.pkl_v2')
+val_flat_idx = load_file_pickle('./data/lang_model/val_flat_idx_list.pkl_v2')
 
 
 # In[17]:
