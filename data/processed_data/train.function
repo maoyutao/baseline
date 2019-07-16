@@ -1,0 +1,4 @@
+def monkeypatch_django
+def normalize_file_permissions st_mode
+def dummy_extend args
+def find_class

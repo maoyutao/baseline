@@ -1,0 +1,3 @@
+merge sort complexity : o(n log(n ) )
+bucket sort complexity : o(n^2 ) the complexity is dominated by nextsort
+[ summary ] computes the n - th fibonacci number recursive . problem : this implementation is very slow . approximate o(2^n ) arguments : n { [ int ] } -- [ description ] returns : [ int ] -- [ description ]

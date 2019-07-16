@@ -1,0 +1,4 @@
+monkeypatches support for us into parts of django .
+normalizes the permission bits in the st_mode field from stat to 644 755 popular vcss only track whether a file is executable or not . the exact permissions can vary on systems with different umasks . normalising to 644 ( non executable ) or 755 ( executable ) makes builds more reproducible .
+used to test configurator.extend
+this scope is special because its in front of testclass
